@@ -22,7 +22,8 @@ class TestBankAccount
         account.displayBalance();
         
         // Call withdraw() here 
-
+        account.withdraw(100);
+        account.displayBalance();
     } 
     /*
      1. BankAccount(500)

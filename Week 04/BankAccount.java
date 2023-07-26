@@ -34,6 +34,9 @@ class BankAccount
 
 
     // withdraw() method 
-    
+    void withdraw(double amount)
+    {
+        balance = balance - amount;
+    }
     
 } 
