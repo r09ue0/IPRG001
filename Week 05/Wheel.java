@@ -1,6 +1,7 @@
 public class Wheel
 {
     private double position;
+    
     public Wheel(double thePosition)
     {
         position = thePosition;
@@ -20,12 +21,10 @@ public class Wheel
     {
         position = position - distance;
     }
-    // Accessors &amp; mutators
 
     // toString() example sentence is: “position is = 5”
     public String toString()
     {
-        return "" ;
+        return "Position is "+ position;
     }
-
 }

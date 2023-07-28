@@ -4,6 +4,7 @@ public class Bike
     private Wheel frontWheel;
     private Wheel backWheel;
     // Constant for the number of wheels
+    private final int NUM_OF_WHEELS = 2;
 
     public Bike(String colour, Wheel frontWheel, Wheel backWheel)
     {
@@ -35,5 +36,35 @@ public class Bike
         return "Colour = " + colour + ", front wheel position is = " +
         frontWheel.getPosition() + ", back wheel position is = " +
         backWheel.getPosition();
+    }
+    
+    public String getColour()
+    {
+        return colour;
+    }
+    
+    public Wheel getFrontWheel()
+    {
+        return frontWheel;
+    }
+    
+    public Wheel getBackWheel()
+    {
+        return backWheel;
+    }
+    
+    public void setColour(String colour)
+    {
+        this.colour = colour;
+    }
+    
+    public void setFrontWheel(Wheel frontWheel)
+    {
+        this.frontWheel = frontWheel;
+    }
+    
+    public void setBackWheel(Wheel backWheel)
+    {
+        this.backWheel = backWheel;
     }
 }

@@ -12,8 +12,18 @@ public class Calculator
     
     public Calculator(int numberOne, int numberTwo)
     {
-        this.numberOne = numberOne;
-        this.numberTwo = numberTwo;
+        setNumberOne(numberOne);
+        setNumberTwo(numberTwo);
+    }
+    
+    public void add()
+    {
+        System.out.println("Addition is " + (numberOne + numberTwo));
+    }
+    
+    public void subtract()
+    {
+         System.out.println("Subtraction is " + (numberOne - numberTwo) );
     }
     
     public int getNumberOne()
@@ -36,19 +46,8 @@ public class Calculator
         this.numberTwo = numberTwo;
     }
     
-    public void add()
-    {
-        System.out.println("Addition is " + (numberOne + numberTwo));
-    }
-    
-    public void subtract()
-    {
-         System.out.println("Subtraction is " + (numberOne - numberTwo) );
-    }
-    
     public String toString()
     {
         return "numberOne is "+ numberOne +" and numberTwo is " + numberTwo;
     }
-    
 }
