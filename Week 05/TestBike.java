@@ -1,14 +1,16 @@
 public class TestBike
 {
-    Bike b1, b2;
-    Wheel fw, bw;
-    TestBike()
+    private Bike bike1, bike2;
+    private Wheel frontWheel, backWheel;
+    
+    public TestBike()
     {
-        fw = new Wheel(100);
-        bw = new Wheel(100);
+        frontWheel = new Wheel(100);
+        backWheel = new Wheel(100);
         // Create the Bike objects:
-        b1 = new Bike("Black", fw, bw);
-        b1.moveBackward(10);
+        bike1 = new Bike("Black", frontWheel, backWheel);
+        bike1.moveBackward(10);
+        System.out.println(bike1.toString());
 
         /*String colour = b1.getColour(); //call accessor getColour()
         System.out.println(“My bike is currently painted: “ + colour);

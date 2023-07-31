@@ -30,12 +30,10 @@ public class Bike
         backWheel.moveBackward(distance);
     }
 
-    // Accessors &amp; mutators
     public String toString()
     {
-        return "Colour = " + colour + ", front wheel position is = " +
-        frontWheel.getPosition() + ", back wheel position is = " +
-        backWheel.getPosition();
+        return "Colour = "+ colour +", Front Wheel "+frontWheel.toString() 
+        +", Back Wheel "+ backWheel.toString();
     }
     
     public String getColour()
@@ -51,6 +49,11 @@ public class Bike
     public Wheel getBackWheel()
     {
         return backWheel;
+    }
+    
+    public int getNumOfWheels()
+    {
+        return NUM_OF_WHEELS;
     }
     
     public void setColour(String colour)
