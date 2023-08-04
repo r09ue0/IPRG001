@@ -7,6 +7,7 @@ public class Loops
         {
             System.out.println("Hi");
         }
+        System.out.println(total(3));
     }
 
     public void insideOutside()
@@ -27,7 +28,7 @@ public class Loops
     public void addNumbers()
     {
         int total = 0;
-        for(int i=0; i<=20; i++)
+        for(int i=1; i<=20; i++)
         {
             total += i;
         }
@@ -36,7 +37,7 @@ public class Loops
 
     public void lgeToSmall()
     {
-        for(int i=30; i>0; i--)
+        for(int i=30; i>=1; i--)
         {
             System.out.println(i);
         }
@@ -47,11 +48,11 @@ public class Loops
         String display = "";
         for(int k=0; k < length; k++)
         {
-            display = display +"*";
+            display += "*";
             //display = "" + "*" = "*" i=0
             //display = "*" + "*" = "**" i=1
         }
-        display = display + "\n";
+        display += "\n";
         System.out.println(display);
     }
     
@@ -66,10 +67,20 @@ public class Loops
     public void evenNumbers()
     {
         int total = 0;
-        for(int i=0; i<20; i+=2)
+        for(int i=2; i<20; i+=2)
         {
             total += i;
         }
         System.out.println(total);
+    }
+    
+    public int total(int number)
+    {
+        int sum = 0;
+        for(int i=1; i<=number; i++)
+        {
+            sum += i;
+        }
+        return sum;
     }
 }
