@@ -43,17 +43,22 @@ public class Loops
         }
     }
 
-    public void printLine(int length)
+    public void printLine(int col)
     {
         String display = "";
-        for(int k=0; k < length; k++)
+        for(int k=0; k < col; k++)
         {
             display += "*";
-            //display = "" + "*" = "*" i=0
-            //display = "*" + "*" = "**" i=1
         }
-        display += "\n";
-        System.out.println(display);
+        System.out.println(display); 
+    }
+    
+    public void printTable(int row)
+    {
+        for(int i=0; i<row; i++)
+        {
+            printLine(row);
+        }
     }
     
     public void countTo20()
