@@ -2,6 +2,7 @@ public class TestArray
 {
     private int table[] = new int[100];
     private String names[]={"Mary", "Barbarella","Judy", "Josephine", "Nicolle", "Rosemary"};
+    private double[] prices = new double[50];
 
     public TestArray()
     {
@@ -13,17 +14,17 @@ public class TestArray
 
     public void setupPrices()
     {
-        for(int i=0; i<50; i++)
+        for(int i=0; i<prices.length; i++)
         {
-            table[i] = 101 + i;
+            prices[i] = 101 + i;
         }
     }
     public void addArray()
     {
         int total = 0;
-        for(int i=0; i<table.length; i++)
+        for(int i=0; i<prices.length; i++)
         {
-            total += table[i];
+            total += prices[i];
         }
         System.out.println(total);
     }

@@ -6,12 +6,13 @@ public class TestRobot
     {
         for(int i=0; i<robots.length; i++)
         {
-            robots[i] = new Robot();
-            robots[i].setId(i+1);
+            String colour = "";
             if((i+1)%2 == 0)
-                robots[i].setColour("red");
+                colour = "red";
             else
-                robots[i].setColour("blue");
+                colour = "blue";
+                
+            robots[i] = new Robot(i+1,colour);
         }
         
     }
