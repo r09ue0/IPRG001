@@ -1,75 +1,83 @@
 public class Robot
 {
     private int id;
-    private String colour;
-    private int x = 3;
+    private String color;    
+    private int x = 2;
     private int y = 1;
-    
+
+    // default constructor
     public Robot()
     {
         id = 1;
-        colour = "Silver";
+        //color = "silver";
+        paint("silver");
     }
-    
-    public Robot(int id, String colour)
+
+    // alternate constructor
+    public Robot(int id, String color)
     {
-        setId(id);
-        setColour(colour);
+        this.id = id;
+        //this.color = color;
+        paint(color);
     }
-    
-    public int getId()
-    {
-        return id;
-    }
+
+    // mutators
     public void setId(int id)
     {
         this.id = id;
     }
-    
-    public int getX()
-    {
-        return id;
-    }
+
     public void setX(int x)
     {
         this.x = x;
+    }
+
+    public void setY(int y)
+    {
+        this.y = y;
+    }
+
+    // mutator for color
+    public void paint(String color)
+    {
+        this.color = color;
+    }
+    
+    // accessors
+    public int getId()
+    {
+        return id;
+    }
+    
+    public int getX()
+    {
+        return x;
     }
     
     public int getY()
     {
         return y;
     }
-    public void setY(int id)
-    {
-        this.y = y;
-    }
     
-    public String getColour()
+    public String getColor()
     {
-        return colour;
+        return color;
     }
-    public void setColour(String colour)
-    {
-        this.colour = colour;
-    }
-    
-    /*
-    public String paint(String newColour)
-    {
-        System.out.println(newColour + " Paint Success");
-        return newColour;
-    }
-    */
-    
-    public void move(int across, int down)
+
+    public void move(int across, int down) 
     {
         x += across;
         y += down;
     }
+
+    public void print()
+    {
+        System.out.println(toString());
+    }
     
     public String toString()
     {
-        return "The "+ colour +" Robot with id "+ id 
-        +" is at position ("+ x +","+ y +")";
+        return "The " + color + " Robot with id " + id 
+            + " is at position (" + x + "," + y + ")";
     }
 }
