@@ -41,7 +41,7 @@ public class Person
         {
             for(int j=0; j<table2D[i].length; j++)
             {
-                System.out.print(table2D[i][j] +",");
+                System.out.print(table2D[i][j] +" ");
             }
             System.out.println();
         }
@@ -65,7 +65,6 @@ public class Person
                 break;
             case 5:
             default: System.out.println("LIKED BY EVERYONE");
-                break;
         }
     }
 
